@@ -1,7 +1,8 @@
 import axios, { type AxiosError, type AxiosRequestHeaders } from 'axios';
 
 // URL для backend API
-const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+const apiUrl = import.meta.env.VITE_API_URL || 'https://todobe-ur9w.onrender.com' || 'http://localhost:5000';
+console.log('evs', import.meta.env);
 
 export const axiosInstance = axios.create({
   baseURL: apiUrl,
